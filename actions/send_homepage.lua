@@ -23,7 +23,7 @@ end)
 table.sort(slide_weights, function (a, b) return a.weight < b.weight end)
 local slides = map(slide_weights, function (it) return it.content end)
 
-local homepage = render("layouts/index-foundpatterns.html", {
+local homepage = render("layouts/index.html", {
   SITE_URL = "/",
   SITENAME = torchbear.settings.sitename,
   articles = {},
